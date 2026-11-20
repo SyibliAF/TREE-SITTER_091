@@ -1,0 +1,26 @@
+## fungsi.scm
+@nama  baris 8: tambah
+@nama  baris 24: bagi
+@nama  baris 28: pangkat
+@nama  baris 18: tanpa_param
+@nama  baris 13: kali
+## print.scm
+@fn  baris 14: print
+@fn  baris 20: print
+@fn  baris 19: print
+@args  baris 14: (a, b)
+@args  baris 19: ("halo")
+@args  baris 20: ()
+## import.scm
+@modul  baris 2: os
+@modul  baris 4: pathlib
+@modul  baris 3: sys
+@modul  baris 5: collections
+## docstring.scm
+@doc  baris 9: """Menjumlahkan dua angka."""
+## params.scm (nama jumlah_param)
+tambah 2
+kali 3
+tanpa_param 0
+bagi 3
+pangkat 2
