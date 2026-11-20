@@ -1,0 +1,31 @@
+=== fungsi (has_error=False) ===
+(module (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (binary_operator left: (string (string_start) (string_content) (string_end)) right: (identifier))))))
+
+=== if_else (has_error=False) ===
+(module (if_statement condition: (comparison_operator (identifier) (integer)) consequence: (block (expression_statement (assignment left: (identifier) right: (integer)))) alternative: (else_clause body: (block (expression_statement (assignment left: (identifier) right: (integer)))))))
+
+=== kelas (has_error=False) ===
+(module (class_definition name: (identifier) body: (block (function_definition name: (identifier) parameters: (parameters (identifier)) body: (block (return_statement (string (string_start) (string_content) (string_end))))))))
+
+=== rusak_tanpa_titik_dua (has_error=True) ===
+(module (ERROR (identifier) (parameters (identifier)) (identifier)))
+
+=== rusak_tanpa_kurung_tutup (has_error=True) ===
+(module (ERROR (binary_operator left: (integer) right: (integer))))
+
+--- children dari function_definition ---
+def anonim
+identifier bernama
+parameters bernama
+: anonim
+block bernama
+--- children dari parameters ---
+( anonim
+identifier bernama
+) anonim
+len(children) = 5 | len(named_children) = 3
+--- ERROR/MISSING ---
+rusak_tanpa_titik_dua
+ditemukan: ERROR 'ERROR' <Point row=0, column=0>
+rusak_tanpa_kurung_tutup
+ditemukan: ERROR 'ERROR' <Point row=0, column=0>

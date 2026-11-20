@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+node_modules/
+*.so
+*.dll
+*.dylib
+*.wasm
+*.o
+.venv/
+Part 1 - Tree-sitter.md
