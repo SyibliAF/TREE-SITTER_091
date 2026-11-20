@@ -1,0 +1,1 @@
+{ "name": "tree-sitter-filter", "version": "0.1.0", "private": true, "main": "grammar.js" }
